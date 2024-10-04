@@ -1,0 +1,19 @@
+@import url("userConfig.css");
+
+.menupopup-arrowscrollbox {
+  color: var(--primary-color) !important;
+  background-color: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
+  font-style: italic;
+  font-family: monospace;
+  opacity: 0.8;
+}
+
+#browser {
+  border-color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+#tabbrowser-tabpanels {
+  background-color: transparent !important;
+}
