@@ -1,4 +1,18 @@
+
+/*================ GLOBAL COLORS ================*/
+
 :root {
-	--primary-color: #e1e1e1;
-	--secondary-color: #000000;
+
+    /*** COLOURS ***/
+
+    --primary-color: 0, 0, 0;
+    --secondary-color: 255, 255, 255;
+    --accent-color: 0, 0, 0;
+    --secondary-accent-color: 146, 130, 141;
+    --third-accent-color: 237, 200, 227;
+
+    /*** STRUCTURE ***/
+
+    --rounding: 0px;
+
 }

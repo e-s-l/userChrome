@@ -3,8 +3,8 @@
 @-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
 
     .click-target-container *, .top-sites-list * {
-        color: var(--primary-color) !important ;
-        text-shadow: 2px 2px 2px var(--secondary-color) !important ;
+        color: rgba(var(--primary-color), 1) !important ;
+        text-shadow: 2px 2px 2px rgba(var(--secondary-color),) !important ;
     }
 
     body::before {
@@ -13,58 +13,32 @@
         position: fixed ;
         top: 0 ;
         left: 0 ;
-	  	background: var(--secondary-color);
+	  	background: rgba(var(--secondary-color),1) repeat url(imgs/mazepur2.BMP) center;
         background-size: cover ;
         width: 100vw ;
         height: 100vh ;
     }
 
-	.top-site-outer .title{
-        font-style: italic !important;
-		font-family: monospace;
-		color: var(--secondary-color);
+    body { 
+        background: transparent !important;
     }
 
-    .top-site-outer .title{
-        font-size: 2rem !important;
-    }
-
-    .top-site-outer .top-site-inner > a {
-        padding: 10px 10px 4px !important;
-    }
-
-    .search-handoff-button, .search-wrapper input {
-        background: var(--primary-color) !important;
-        border-radius: 5px !important;
-		color: var(--secondary-color) !important;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-    }
-
-	.search-wrapper input {
-		color: blue; /* Change this to your desired color */
-	}
-
-    #newtab-search-text::placeholder {
-        opacity: 0 !important;
-    }
     :root[lwt-newtab-brighttext]{
             --newtab-primary-action-background: transparent !important;
     }
 
+    .search-icon,
+    .search-wrapper input,
     .search-wrapper .search-button,
     .search-wrapper .logo-and-wordmark .logo,
     .fake-textbox,
     .top-site-outer .tile,
-    .icon.icon-pin-small {
+    .top-site-outer .top-site-inner > a,
+    #newtab-margin-top, #newtab-search-container,
+    #newtab-search-container, #newtab-search-logo,
+    .icon.icon-pin-small,
+    .search-wrapper .logo-and-wordmark .wordmark {
         display: none !important;
     }
-
-	.search-wrapper .logo-and-wordmark .wordmark {
-		/* display: none !important; */
-		font-family: monospace;
-		font-style: italic;
-	}
 
 }
