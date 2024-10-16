@@ -1,0 +1,55 @@
+@import url("userConfig.css");
+
+/**********************/
+/*** SEARCH/NAV BAR ***/
+/**********************/
+
+#nav-bar:-moz-lwtheme { box-shadow: none !important; }
+
+toolbar#nav-bar {
+    background: rgba(var(--secondary-color), 1) !important;
+    box-shadow: none !important;
+    padding-bottom: 4px !important;
+}
+
+toolbar#nav-bar toolbarbutton .toolbarbutton-icon,
+toolbar#nav-bar toolbarbutton #fxa-avatar-image {
+    transition: all 0.3s ease !important;
+    fill: rgba(var(--secondary-accent-color), 1) !important;
+}
+
+#urlbar>#urlbar-background {
+    border-radius: var(--rounding) !important;
+    border: 0 !important;
+    background-color: rgba(var(--accent-color), 1) !important;
+    color: rgba(var(--third-accent-color), 1) !important;
+}
+
+#urlbar:not([focused="true"])>#urlbar-background,
+#urlbar>#urlbar-input-container {
+    border-radius: var(--rounding) !important;
+    color: rgba(var(--third-accent-color), 1) !important;
+}
+
+:root:not([uidensity="compact"]) #back-button>.toolbarbutton-icon {
+    background-color: transparent !important;
+    color: rgba(var(--third-accent-color), 1) !important;
+}
+
+.urlbar-input-box {
+    color: rgba(var(--third-accent-color), 1) !important;
+}
+
+.urlbarView {
+    color: rgba(var(--secondary-color), 0.9) !important;
+}
+
+.urlbarView-row[selected] .urlbarView-row-inner,
+.urlbarView-row:hover .urlbarView-row-inner {
+    color: rgba(var(--primary-color), 1) !important;
+    background-color: rgba(var(--secondary-accent-color), 0.9) !important; 
+}
+
+box.toolbarbutton-animatable-box {
+    margin-top: -2px !important;
+}

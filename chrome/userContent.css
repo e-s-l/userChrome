@@ -14,9 +14,9 @@
         top: 0 ;
         left: 0 ;
 	  	background: rgba(var(--secondary-color),1) repeat url(imgs/mazepur2.BMP) center;
-        background-size: cover ;
-        width: 100vw ;
-        height: 100vh ;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
     }
 
     body { 
@@ -41,4 +41,11 @@
         display: none !important;
     }
 
+}
+
+@-moz-document url-prefix() {
+    :root {
+      --in-content-page-background: transparent !important;
+      --in-content-box-background: transparent !important;
+    }
 }

@@ -1,9 +1,9 @@
-
-/*================ GLOBAL COLORS ================*/
-
 :root {
 
+
+    /***************/
     /*** COLOURS ***/
+    /***************/
 
     --primary-color: 0, 0, 0;
     --secondary-color: 255, 255, 255;
@@ -11,7 +11,10 @@
     --secondary-accent-color: 146, 130, 141;
     --third-accent-color: 237, 200, 227;
 
+    
+    /*****************/
     /*** STRUCTURE ***/
+    /*****************/
 
     --rounding: 0px;
 
