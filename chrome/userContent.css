@@ -49,3 +49,11 @@
       --in-content-box-background: transparent !important;
     }
 }
+
+@-moz-document url(about:newtab)
+{
+
+ #newtab-search-container, #newtab-search-logo { display:none !important; }
+ #newtab-margin-top, #newtab-search-container { display:none!important; }
+ }
+

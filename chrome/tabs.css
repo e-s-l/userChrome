@@ -1,5 +1,15 @@
 @import url("userConfig.css");
 
+
+
+html, html > *, html > * > *, .browser-toolbar  {
+    border: none !important;
+    -moz-appearance: none !important;
+    box-shadow: none !important;
+    background: transparent!important;
+}
+
+
 /************/
 /*** TABS ***/
 /************/
@@ -59,7 +69,7 @@ tab[selected="true"] .tab-background {
 .tab-close-button:hover {
     fill-opacity: 1 !important;
     color: rgba(var(--secondary-accent-color), 1) !important;
-    transform: rotate(360deg);
+    transform: rotate(180deg);
 }
 
 .tabbrowser-tab>.tab-stack>.tab-background {
@@ -80,4 +90,8 @@ tab[selected="true"] .tab-background {
 
 #tabs-newtab-button:hover{
     fill: rgba(var(--third-accent-color), 1) !important;
+}
+
+.tab-line {
+    background: none !important;
 }

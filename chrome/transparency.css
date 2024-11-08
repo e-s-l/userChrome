@@ -4,19 +4,8 @@
 /*** TRANSPARENCY ***/
 /********************/
 
-html, html > *, html > * > *, .browser-toolbar  {
-    border: none !important;
-    -moz-appearance: none !important;
-    box-shadow: none !important;
-    background: transparent!important;
-}
-
 .titlebar-color, .browser-toolbar, findbar {
     background: rgba(var(--secondary-color), 0.85) !important;  
-}
-
-.tab-line {
-    background: none !important;
 }
 
 tab[selected="true"]::after, .tabbrowser-tab[beforeselected-visible]::after {

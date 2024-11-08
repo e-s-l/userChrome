@@ -1,10 +1,39 @@
 @import url("userConfig.css");
 
+#star-button {
+    color: rgba(var(--fourth-accent-color), 1);
+}
+
+
+/*...*/
+
+
+#sidebar-splitter {
+    display: none;
+}
+
+
+#search-container {max-width:200px!important}
+#urlbar-input-container{
+    max-width:200px!important
+}
+
+
+.toolbarbutton-1:hover {
+    transform: scale(1.1);
+    color: rgba(var(--secondary-accent-color), 1);
+    fill: rgba(var(--third-accent-color), 1) !important;
+}
+
+
+
 /**********************/
 /*** SEARCH/NAV BAR ***/
 /**********************/
 
-#nav-bar:-moz-lwtheme { box-shadow: none !important; }
+#nav-bar:-moz-lwtheme { 
+    box-shadow: none !important;
+}
 
 toolbar#nav-bar {
     background: rgba(var(--secondary-color), 1) !important;

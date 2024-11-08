@@ -47,9 +47,14 @@
     background: rgba(var(--accent-color), 1) !important;
 }
 
-.titlebar-button.titlebar-min:hover, .titlebar-button.titlebar-restore:hover, .titlebar-button.titlebar-max:hover, .titlebar-button.titlebar-close:hover {
+.titlebar-button.titlebar-min:hover, .titlebar-button.titlebar-max:hover, .titlebar-button.titlebar-close:hover {
     background-color: rgba(var(--accent-color), 0.7);
     transform: rotate(360deg);
+}
+
+.titlebar-button.titlebar-restore:hover {
+    background-color: rgba(var(--accent-color), 0.7);
+    transform: rotate(180deg);
 }
 
 #newtab-personalize-icon-label:hover {
