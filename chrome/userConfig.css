@@ -1,28 +1,25 @@
-:root {
-
-
-    /***************/
-    /*** COLOURS ***/
-    /***************/
-
-    --primary-color: 0, 0, 0;
-    --secondary-color: 255, 255, 255;
-
-    --accent-color: 0, 0, 0;
-    --secondary-accent-color: 146, 130, 141;
-    
-    --third-accent-color: 237, 200, 227;
-    --fourth-accent-color: 0, 250, 250;
-
-    
 /*
-rgba(0,250,250, 1)  
+
+Global style properties.
+
 */
 
-    /*****************/
-    /*** STRUCTURE ***/
-    /*****************/
+:root {
 
-    --rounding: 0px;
+/***************/
+/*** COLOURS ***/
+/***************/
+
+--primary-color: 0, 0, 0;
+--secondary-color: 255, 255, 255;
+
+--accent-color: 146, 130, 141;
+--second-accent-color: 237, 200, 227;
+
+/*****************/
+/*** STRUCTURE ***/
+/*****************/
+
+--rounding: 0px;
 
 }

@@ -1,17 +1,16 @@
 @import url("userConfig.css");
 
+/************/
+/*** MISC ***/
+/************/
+
 #star-button {
-    color: rgba(var(--fourth-accent-color), 1);
+    color: rgba(var(--second-accent-color), 1);
 }
-
-
-/*...*/
-
 
 #sidebar-splitter {
     display: none;
 }
-
 
 #search-container {max-width:200px!important}
 #urlbar-input-container{
@@ -20,12 +19,10 @@
 
 
 .toolbarbutton-1:hover {
-    transform: scale(1.1);
-    color: rgba(var(--secondary-accent-color), 1);
-    fill: rgba(var(--third-accent-color), 1) !important;
+
+    color: rgba(var(--accent-color), 1);
+    fill: rgba(var(--second-accent-color), 1) !important;
 }
-
-
 
 /**********************/
 /*** SEARCH/NAV BAR ***/
@@ -44,29 +41,25 @@ toolbar#nav-bar {
 toolbar#nav-bar toolbarbutton .toolbarbutton-icon,
 toolbar#nav-bar toolbarbutton #fxa-avatar-image {
     transition: all 0.3s ease !important;
-    fill: rgba(var(--secondary-accent-color), 1) !important;
+   
 }
 
 #urlbar>#urlbar-background {
     border-radius: var(--rounding) !important;
     border: 0 !important;
-    background-color: rgba(var(--accent-color), 1) !important;
-    color: rgba(var(--third-accent-color), 1) !important;
+    background-color: rgba(var(--primary-color), 1) !important;
+    color: rgba(var(--second-accent-color), 1) !important;
 }
 
 #urlbar:not([focused="true"])>#urlbar-background,
 #urlbar>#urlbar-input-container {
     border-radius: var(--rounding) !important;
-    color: rgba(var(--third-accent-color), 1) !important;
-}
-
-:root:not([uidensity="compact"]) #back-button>.toolbarbutton-icon {
-    background-color: transparent !important;
-    color: rgba(var(--third-accent-color), 1) !important;
+    color: rgba(var(--second-accent-color), 1) !important;
+    border: rgba(var(--secondary-color), 1));
 }
 
 .urlbar-input-box {
-    color: rgba(var(--third-accent-color), 1) !important;
+    color: rgba(var(--second-accent-color), 1) !important;
 }
 
 .urlbarView {
@@ -76,7 +69,7 @@ toolbar#nav-bar toolbarbutton #fxa-avatar-image {
 .urlbarView-row[selected] .urlbarView-row-inner,
 .urlbarView-row:hover .urlbarView-row-inner {
     color: rgba(var(--primary-color), 1) !important;
-    background-color: rgba(var(--secondary-accent-color), 0.9) !important; 
+    background-color: rgba(var(--accent-color), 0.9) !important; 
 }
 
 box.toolbarbutton-animatable-box {

@@ -24,43 +24,42 @@
     transition: all 0.3s ease !important;
     list-style-image: none;
     border-radius: var(--rounding);
-    fill: rgba(var(--accent-color), 1);
+    fill: rgba(var(--primary-color), 1);
 }
 
 .titlebar-button.titlebar-min>.toolbarbutton-icon {
-    background: rgba(var(--third-accent-color), 1) !important;
+    background: rgba(var(--second-accent-color), 1) !important;
 }
 
 .titlebar-button.titlebar-max>.toolbarbutton-icon,
 .titlebar-button.titlebar-restore>.toolbarbutton-icon {
-    background: rgba(var(--accent-color), 1) !important;
+    background: rgba(var(--primary-color), 1) !important;
 }
 
 .titlebar-button.titlebar-close>.toolbarbutton-icon {
-    background: rgba(var(--accent-color), 1) !important;
+    background: rgba(var(--primary-color), 1) !important;
 }
 
 .titlebar-button.titlebar-min:hover>.toolbarbutton-icon,
 .titlebar-button.titlebar-max:hover>.toolbarbutton-icon,
 .titlebar-button.titlebar-restore:hover>.toolbarbutton-icon,
 .titlebar-button.titlebar-close:hover>.toolbarbutton-icon {
-    background: rgba(var(--accent-color), 1) !important;
+    background: rgba(var(--primary-color), 1) !important;
 }
 
 .titlebar-button.titlebar-min:hover, .titlebar-button.titlebar-max:hover, .titlebar-button.titlebar-close:hover {
-    background-color: rgba(var(--accent-color), 0.7);
+    background-color: rgba(var(--primary-color), 0.7);
     transform: rotate(360deg);
 }
 
 .titlebar-button.titlebar-restore:hover {
-    background-color: rgba(var(--accent-color), 0.7);
+    background-color: rgba(var(--primary-color), 0.7);
     transform: rotate(180deg);
 }
 
 #newtab-personalize-icon-label:hover {
-    background: rgba(var(--accent-color), 1) !important;
+    background: rgba(var(--primary-color), 1) !important;
 }
-
 
 /******************************/
 /*** OTHER MENU BAR BUTTONS ***/
@@ -76,6 +75,6 @@
     #nav-bar .toolbarbutton-1[open="true"] > .toolbarbutton-icon,
     #nav-bar .toolbarbutton-1[open="true"] > .toolbarbutton-text,
     #nav-bar .toolbarbutton-1[open="true"] > .toolbarbutton-badge-stack {
-        fill: rgba(var(--accent-color), 1)) !important;
+        fill: rgba(var(--primary-color), 1)) !important;
     }
 }

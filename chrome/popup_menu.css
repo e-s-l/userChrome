@@ -7,7 +7,7 @@
 .menupopup-arrowscrollbox {
     color: rgba(var(--secondary-color),1) !important;
     background-color: rgba(var(--primary-color), 1) !important;
-    border-color: rgba(var(--accent-color), 1) !important;
+    border-color: rgba(var(--second-accent-color), 1) !important;
     font-style: italic;
     font-family: monospace;
     opacity: 0.8;

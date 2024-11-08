@@ -1,15 +1,5 @@
 @import url("userConfig.css");
 
-
-
-html, html > *, html > * > *, .browser-toolbar  {
-    border: none !important;
-    -moz-appearance: none !important;
-    box-shadow: none !important;
-    background: transparent!important;
-}
-
-
 /************/
 /*** TABS ***/
 /************/
@@ -44,15 +34,15 @@ html, html > *, html > * > *, .browser-toolbar  {
 
 .tabbrowser-tab:not([visuallyselected="true"]),
 .tabbrowser-tab:-moz-lwtheme {
-    color: rgba(var(--secondary-accent-color), 1) !important;
+    color: rgba(var(--accent-color), 1) !important;
 }
 
 tab[selected="true"] .tab-content {
-    color: rgba(var(--secondary-accent-color), 1) !important;
+    color: rgba(var(--accent-color), 1) !important;
 }
 
 tab[selected="true"] .tab-background {
-    background: rgba(var(--accent-color), 1) !important;
+    background: rgba(var(--primary-color), 1) !important;
 }
 
 .tabbrowser-tab::after,
@@ -68,7 +58,7 @@ tab[selected="true"] .tab-background {
 
 .tab-close-button:hover {
     fill-opacity: 1 !important;
-    color: rgba(var(--secondary-accent-color), 1) !important;
+    color: rgba(var(--second-accent-color), 1) !important;
     transform: rotate(180deg);
 }
 
@@ -85,13 +75,24 @@ tab[selected="true"] .tab-background {
 }
 
 #tabs-newtab-button{
-    fill:rgba(var(--accent-color), 1) !important;
+    fill:rgba(var(--primary-color), 1) !important;
 }
 
 #tabs-newtab-button:hover{
-    fill: rgba(var(--third-accent-color), 1) !important;
+    fill: rgba(var(--second-accent-color), 1) !important;
 }
 
 .tab-line {
     background: none !important;
+}
+
+/*************/
+/*** OTHER ***/
+/*************/
+
+html, html > *, html > * > *, .browser-toolbar  {
+    border: none !important;
+    -moz-appearance: none !important;
+    box-shadow: none !important;
+    background: transparent!important;
 }
