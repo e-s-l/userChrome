@@ -13,7 +13,7 @@
         position: fixed ;
         top: 0 ;
         left: 0 ;
-	  	background: rgba(var(--secondary-color),1) repeat url(imgs/mazepur2.BMP) center;
+        background: rgba(var(--secondary-color),1) repeat url(imgs/mazepur2.BMP) center;
         background-size: cover;
         width: 100vw;
         height: 100vh;
@@ -40,7 +40,6 @@
     .search-wrapper .logo-and-wordmark .wordmark {
         display: none !important;
     }
-
 }
 
 @-moz-document url-prefix() {
@@ -49,11 +48,3 @@
       --in-content-box-background: transparent !important;
     }
 }
-
-@-moz-document url(about:newtab)
-{
-
- #newtab-search-container, #newtab-search-logo { display:none !important; }
- #newtab-margin-top, #newtab-search-container { display:none!important; }
- }
-
