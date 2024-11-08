@@ -67,14 +67,5 @@
 
 :root {
     --toolbarbutton-hover-background: transparent !important; 
-    /*button_background_hover*/ 
     --toolbarbutton-active-background: transparent !important; 
-    /*button_background_active*/ } 
-    
-    /* Color of icons [open]*/
-    #nav-bar .toolbarbutton-1[open="true"] > .toolbarbutton-icon,
-    #nav-bar .toolbarbutton-1[open="true"] > .toolbarbutton-text,
-    #nav-bar .toolbarbutton-1[open="true"] > .toolbarbutton-badge-stack {
-        fill: rgba(var(--primary-color), 1)) !important;
-    }
-}
+} 

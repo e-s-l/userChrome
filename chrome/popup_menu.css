@@ -1,8 +1,8 @@
 @import url("userConfig.css");
 
-/*****************/
-/*** POP MENUS ***/
-/*****************/
+/********************/
+/*** POP-UP MENUS ***/
+/********************/
 
 .menupopup-arrowscrollbox {
     color: rgba(var(--secondary-color),1) !important;
