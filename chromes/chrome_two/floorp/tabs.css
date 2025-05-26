@@ -1,0 +1,72 @@
+/************/
+/*** TABS ***/
+/************/
+
+:root {
+    --rounding: 0px;
+}
+
+#tabbrowser-tabpanels {
+    background-color: transparent !important;
+}
+
+#titlebar #TabsToolbar {
+    padding: 2px 0px 2px 6px !important;
+}
+
+.titlebar-spacer[type="pre-tabs"] {
+    display: none;
+}
+
+#tabbrowser-tabs:not([movingtab])>.tabbrowser-tab[beforeselected-visible]::after,
+#tabbrowser-tabs[movingtab]>.tabbrowser-tab[visuallyselected]::before,
+.tabbrowser-tab[visuallyselected]::after {
+    opacity: 0 !important;
+}
+
+.tab-line {
+    height: 0px !important;
+}
+
+.tabbrowser-tab {
+    margin-right: 5px !important;
+}
+
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+    border-left: 0 !important;
+    opacity: 0 !important;
+}
+
+.tab-close-button {
+    transition: all 0.3s ease !important;
+    border-radius: var(--rounding) !important;
+}
+
+.tab-close-button:hover {
+    fill-opacity: 1 !important;
+    transform: rotate(180deg);
+}
+
+.tabbrowser-tab>.tab-stack>.tab-background {
+    border-radius: var(--rounding) !important;
+}
+
+.tabbrowser-tab>.tab-stack>.tab-background:not([selected="true"]) {
+    transition: all 0.3s ease !important;
+}
+
+.tab-line {
+    background: none !important;
+}
+
+/*************/
+/*** OTHER ***/
+/*************/
+
+html, html > *, html > * > *, .browser-toolbar  {
+    border: none !important;
+    -moz-appearance: none !important;
+    box-shadow: none !important;
+    background: transparent!important;
+}

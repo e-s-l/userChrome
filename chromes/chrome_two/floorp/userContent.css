@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
+
+    .click-target-container *, .top-sites-list * {
+        color: rgba(var(--primary-color), 1) !important ;
+        text-shadow: 2px 2px 2px rgba(var(--secondary-color),) !important ;
+    }
+
+    body::before {
+        content: "" ;
+        z-index: -1 ;
+        position: fixed ;
+        top: 0 ;
+        left: 0 ;
+        background: rgba(var(--secondary-color),1) repeat url(imgs/mazepur2.BMP) center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    body { 
+        background: transparent !important;
+    }
+
+    :root[lwt-newtab-brighttext]{
+            --newtab-primary-action-background: transparent !important;
+    }
+
+    .search-icon,
+    .search-wrapper input,
+    .search-wrapper .search-button,
+    .search-wrapper .logo-and-wordmark .logo,
+    .fake-textbox,
+    .top-site-outer .tile,
+    .top-site-outer .top-site-inner > a,
+    #newtab-margin-top, #newtab-search-container,
+    #newtab-search-container, #newtab-search-logo,
+    .icon.icon-pin-small,
+    .search-wrapper .logo-and-wordmark .wordmark {
+        display: none !important;
+    }
+}
+
+@-moz-document url-prefix() {
+    :root {
+      --in-content-page-background: transparent !important;
+      --in-content-box-background: transparent !important;
+    }
+}
