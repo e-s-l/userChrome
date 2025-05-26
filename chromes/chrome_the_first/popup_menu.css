@@ -20,9 +20,9 @@ menupopup > :is(menuitem, menu):hover {
 }
 
 #browser {
-border-color: rgb(var(--primary-color));
-background-color: rgba(var(--secondary-color), 0.9);
-border: 1px solid;
+    border-color: rgb(var(--primary-color));
+    background-color: rgba(var(--secondary-color), 0.9);
+    border: 1px solid;
 }
 
 toolbox#navigator-toolbox {

@@ -1,0 +1,95 @@
+
+@charset "UTF-8";
+@-moz-document url(chrome://browser/content/browser.xhtml) {
+
+    :root {
+        --rounding: 0px;
+    }
+
+    tab[selected="true"]::after, .tabbrowser-tab[beforeselected-visible]::after {
+        opacity: 0 !important;
+    }
+
+    .tab-icon-image {
+        opacity: 1 !important;
+    }
+
+    /* Move tab sound icon to the top left */
+    .tab-icon-overlay {
+        /* top - left */
+        top: -6px !important;
+        inset-inline-end: 6px !important;
+        width: 14px !important;
+        height: 14px !important;
+        padding: 1px !important;
+        /* background */
+        stroke: var(--tab-icon-overlay-stroke, black) !important;
+        background: var(--tab-icon-overlay-stroke, black) !important;
+        fill-opacity: 0.6 !important;
+        /* icon color */
+        color: #00DDFF !important;
+        /* circle */
+        border-radius: 10px !important;
+    }
+
+    .tab-icon-overlay:hover {
+        /* background */
+        fill-opacity: 1 !important;
+    }
+
+    html, html > *, html > * > *, .browser-toolbar  {
+        border: none !important;
+        -moz-appearance: none !important;
+        box-shadow: none !important;
+        background: transparent!important;
+    }
+
+    :root {
+        --toolbarbutton-hover-background: transparent !important; 
+        --toolbarbutton-active-background: transparent !important; 
+    } 
+
+    .menupopup-arrowscrollbox {
+        font-style: italic;
+        font-family: monospace;
+        opacity: 0.8;
+        border-radius: var(--rounding) !important;
+    }
+
+    #browser {
+        border: 1px solid;
+    }
+
+    toolbox#navigator-toolbox {
+        border: 0 !important;
+    }
+
+    #nav-bar:-moz-lwtheme { 
+        box-shadow: none !important;
+    }
+
+    toolbar#nav-bar {
+        box-shadow: none !important;
+        padding-bottom: 4px !important;
+    }
+
+    toolbar#nav-bar toolbarbutton .toolbarbutton-icon,
+    toolbar#nav-bar toolbarbutton #fxa-avatar-image {
+        transition: all 0.3s ease !important;
+    }
+
+    #urlbar:not([focused="true"])>#urlbar-background,
+    #urlbar>#urlbar-input-container {
+        border-radius: var(--rounding) !important;
+    }
+
+    box.toolbarbutton-animatable-box {
+        margin-top: 2px !important;
+    }
+
+    .tab-close-button:hover {
+        fill-opacity: 1 !important;
+        transform: rotate(180deg);
+    }
+
+}
