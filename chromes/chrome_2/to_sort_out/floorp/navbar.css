@@ -1,0 +1,92 @@
+/**************/
+/*** NAVBAR ***/
+/**************/
+
+/*@-moz-document url(chrome://browser/content/browser.xhtml) {*/
+
+    toolbar#nav-bar {
+        box-shadow: none !important;
+        padding-bottom: 4px !important;
+        border-radius: var(--rounding) !important;
+        background-color: rgba(var(--secondary-color), var(--primary-alpha)) !important;
+    }
+
+    #urlbar>#urlbar-background {
+        border-radius: var(--rounding) !important;
+        border: 2 !important;
+        background-color: rgba(var(--secondary-color), var(--primary-alpha)) !important;
+    }
+
+    /*
+    #nav-bar:-moz-lwtheme { 
+        box-shadow: none !important;
+        background-color: rgba(var(--secondary-color), var(--primary-alpha)) !important;
+    }
+    */
+
+    #urlbar {
+        font-family: monospace !important;
+        font-size: 14px !important
+    }
+
+    #urlbar[focused="true"]::before {
+        display: none !important;
+    }
+
+    #urlbar:not([focused="true"])::placeholder {
+        display: none !important;
+    }
+
+    #urlbar:not([focused="true"]) {
+        text-align: left !important;
+    }
+
+    #urlbar::placeholder {
+        display: none !important;
+    }
+
+    toolbar#nav-bar toolbarbutton .toolbarbutton-icon,
+    toolbar#nav-bar toolbarbutton #fxa-avatar-image {
+        transition: all 0.3s ease !important;
+        background-color: rgba(var(--secondary-color), var(--primary-alpha)) !important;
+    }
+
+    #urlbar:not([focused="true"])>#urlbar-background,
+    #urlbar>#urlbar-input-container {
+        border-radius: var(--rounding) !important;
+        background-color: rgba(var(--secondary-color), var(--primary-alpha)) !important;
+    }
+
+    box.toolbarbutton-animatable-box {
+        margin-top: 0px !important;
+    }
+
+    #main-window {
+        appearance: none !important;
+        -moz-appearance: none !important;
+        border-radius: var(--rounding) !important;
+        clip-path: inset(0px) !important;
+    }
+
+    .nav-bar{
+        padding: auto;
+        background-color: rgba(var(--secondary-color), var(--primary-alpha)) !important;
+    }
+
+    .urlbarView {
+        color: rgba(255,255,255,1) !important;
+        background-color: rgba(var(--secondary-color), var(--primary-alpha)) !important; 
+    }
+
+    .urlbarView-row[selected] .urlbarView-row-inner,
+    .urlbarView-row:hover .urlbarView-row-inner {
+        color: rgba(var(--secondary-color),1) !important;
+        background-color: rgba(var(--secondary-color), var(--primary-alpha)) !important; 
+    }
+
+    toolbox#navigator-toolbox {
+        border: 2 !important;
+    }
+
+
+/*}*/

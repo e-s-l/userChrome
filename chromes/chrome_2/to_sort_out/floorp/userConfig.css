@@ -1,0 +1,31 @@
+/*
+
+Global style properties.
+
+*/
+
+:root {
+
+    /***************/
+    /*** COLOURS ***/
+    /***************/
+
+    --primary-color: 200, 0, 0;
+    --secondary-color: 30, 30, 30;
+    --accent-color: 146, 130, 141;
+    --second-accent-color: 237, 200, 227;
+    --primary-alpha: 0.9;
+
+    /*****************/
+    /*** STRUCTURE ***/
+    /*****************/
+
+    --rounding: 0px;
+
+}
+
+
+/*
+rgba(30, 30, 30, 0.1) 
+
+*/

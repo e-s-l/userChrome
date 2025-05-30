@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*
+Putting it all together.
+*/
+
+@import url("userConfig.css");  /* colour schemes etc. */
+@import url("popup_menu.css");
+@import url("tabs.css");
+@import url("navbar.css");
+
+/********/
+/* MISC */
+/********/
+
+/*
+@-moz-document url(chrome://browser/content/browser.xhtml) {
+
+    #appcontent {
+        background: transparent !important;
+    }
+
+    html, html > *, html > * > *, .browser-toolbar  {
+        border: none !important;
+        -moz-appearance: none !important;
+        box-shadow: none !important;
+        background: rgba(30, 30, 30, 0.1) !important;
+    }
+
+    :root {
+        --toolbarbutton-hover-background: transparent !important; 
+        --toolbarbutton-active-background: transparent !important; 
+    } 
+
+    .menupopup-arrowscrollbox {
+        font-style: italic;
+        font-family: monospace;
+        opacity: 0.8;
+        border-radius: 0px !important;
+    }
+
+    #browser {
+        border: 1px solid;
+    }
+}
+*/

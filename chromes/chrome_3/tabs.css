@@ -1,0 +1,55 @@
+/************/
+/*** TABS ***/
+/************/
+
+/* Uncomment to include additional styling */
+/* @import url("moveSoundIconPosition.css"); */
+
+/* Scoped to Firefox browser window */
+/* @-moz-document url(chrome://browser/content/browser.xhtml) { */
+
+tab[selected="true"]::after,
+.tabbrowser-tab[beforeselected-visible]::after {
+    opacity: 1 !important; /* use 1 instead of 99 */
+}
+
+.tab-icon-image {
+    opacity: 1 !important;
+    display: none !important; /* Hide favicon */
+}
+
+.tab-icon-overlay:hover {
+    fill-opacity: 1 !important;
+    transform: rotate(180deg);
+}
+
+/*** SQUARED TABS ***/
+#titlebar {
+    padding: 0 !important;
+    border-radius: var(--rounding, 4px) !important;
+}
+
+.tab-content {
+    width: 100%;
+    background-color: rgba(var(--primary-color), var(--primary-alpha)) !important;
+}
+
+.urlbar-results {
+    background-color: rgba(var(--primary-color), var(--primary-alpha)) !important;
+}
+
+.tabbrowser-tab > .tab-stack > .tab-background {
+    border-radius: 0 !important;
+}
+
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]) {
+    background-color: rgba(var(--accent-color), var(--primary-alpha)) !important;
+    transform: rotate(180deg);
+}
+
+.tab-close-button:hover {
+    fill-opacity: 1 !important;
+    transform: rotate(180deg);
+}
+
+/* } */

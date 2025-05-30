@@ -1,10 +1,10 @@
 
-
-/******************************************************************************
- *****************************************************************************
+/*
+ *
  * BETTERFOX
-  ****************************************************************************
- *****************************************************************************/
+ * Copy me into the root directory of the user profile.
+ *
+ * /
 
 /****************************************************************************
  * SECTION: FASTFOX                                                         *
@@ -219,31 +219,31 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
  * Disable defaulting to https, generally a bad idea...
  *****************************************************************************/
 
-user_pref("browser.urlbar.autoFill", false)
-user_pref("network.stricttransportsecurity.preloadlist", false)
-user_pref("dom.security.https_first_pbm", false)
-user_pref("browser.urlbar.trimURLs", false)
+user_pref("browser.urlbar.autoFill", false);
+user_pref("network.stricttransportsecurity.preloadlist", false);
+user_pref("dom.security.https_first_pbm", false);
+user_pref("browser.urlbar.trimURLs", false);
 
 /******************************************************************************
  * Enable userChrome customisation
  *****************************************************************************/
 
-user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true)
-user_pref("devtools.debugger.remote-enabled", true)
-user_pref("devtools.chrome.enabled", true)
-user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true)
-user_pref("layers.acceleration.force-enabled", true)
-user_pref("gfx.webrender.all", true)
-user_pref("gfx.webrender.enabled", true)
-user_pref("layout.css.backdrop-filter.enabled", true)
-user_pref("svg.context-properties.content.enabled", true)
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+user_pref("devtools.debugger.remote-enabled", true);
+user_pref("devtools.chrome.enabled", true);
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+user_pref("layers.acceleration.force-enabled", true);
+user_pref("gfx.webrender.all", true);
+user_pref("gfx.webrender.enabled", true);
+user_pref("layout.css.backdrop-filter.enabled", true);
+user_pref("svg.context-properties.content.enabled", true);
 
 
 /******************************************************************************
  * MISC
  *****************************************************************************/
 
-user_pref("browser.compactmode.show", true)
-user_pref("apz.overscroll.enabled", false)
-user_pref("browser.uidensity", 1)
-user_pref("browser.compactmode.show", true)
+user_pref("browser.compactmode.show", true);
+user_pref("apz.overscroll.enabled", false);
+user_pref("browser.uidensity", 1);
+user_pref("browser.compactmode.show", true);

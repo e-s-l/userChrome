@@ -1,0 +1,29 @@
+@import url("userConfig.css");
+
+/********************/
+/*** POP-UP MENUS ***/
+/********************/
+
+.menupopup-arrowscrollbox {
+    color: rgba(var(--secondary-color), var(--primary-alpha)) !important;
+    background-color: rgba(var(--primary-color), var(--primary-alpha)) !important;
+    border-color: rgba(var(--accent-color), var(--primary-alpha)) !important;
+    font-style: italic;
+    font-family: monospace;
+    opacity: 0.8;
+    border-radius: var(--rounding) !important;
+}
+
+menupopup > :is(menuitem, menu):hover {
+    color: rgba(var(--primary-color), 1) !important;
+    background-color: rgba(var(--second-accent-color), 1) !important;
+}
+
+#browser {
+    /*border: 1px solid rgb(var(--primary-color)) !important;*/
+    background-color: rgba(var(--secondary-color), 1) !important;
+}
+
+toolbox#navigator-toolbox {
+    border: 0 !important;
+}

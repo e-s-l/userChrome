@@ -1,0 +1,72 @@
+/**************/
+/*** NAVBAR ***/
+/**************/
+
+/* @-moz-document url(chrome://browser/content/browser.xhtml) { */
+
+toolbar#nav-bar {
+    box-shadow: none !important;
+    padding-bottom: 4px !important;
+    border-radius: var(--rounding) !important;
+    background-color: rgba(var(--primary-color), 1) !important;
+}
+
+#urlbar > #urlbar-background {
+    border-radius: var(--rounding, 4px) !important;
+    border: 1px solid transparent !important;
+    background-color: rgba(var(--primary-color), var(--primary-alpha)) !important;
+}
+
+#urlbar {
+    font-family: monospace !important;
+    font-size: 12px !important;
+    color: rgba(var(--secondary-color), 1) !important;
+}
+
+#urlbar[focused="true"]::before,
+#urlbar::placeholder,
+#urlbar:not([focused="true"])::placeholder {
+    display: none !important;
+}
+
+#urlbar:not([focused="true"]) {
+    text-align: left !important;
+}
+
+toolbar#nav-bar toolbarbutton .toolbarbutton-icon,
+toolbar#nav-bar toolbarbutton #fxa-avatar-image {
+    transition: all 0.3s ease !important;
+    background-color: rgba(var(--primary-color), 1) !important;
+}
+
+#urlbar:not([focused="true"]) > #urlbar-background,
+#urlbar > #urlbar-input-container {
+    border-radius: var(--rounding) !important;
+    background-color: rgba(var(--primary-color), var(--primary-alpha)) !important;
+}
+
+box.toolbarbutton-animatable-box {
+    margin-top: 0 !important;
+}
+
+.nav-bar {
+    padding: 0 !important;
+    background-color: rgba(var(--primary-color), var(--primary-alpha)) !important;
+}
+
+.urlbarView {
+    color: rgba(var(--secondary-color), var(--primary-alpha)) !important;
+    background-color: rgba(var(--primary-color), var(--primary-alpha)) !important;
+}
+
+.urlbarView-row[selected] .urlbarView-row-inner,
+.urlbarView-row:hover .urlbarView-row-inner {
+    color: rgba(var(--primary-color), var(--primary-alpha)) !important;
+    background-color: rgba(var(--accent-color), var(--primary-alpha)) !important;
+}
+
+toolbox#navigator-toolbox {
+    border: 1px solid transparent !important;
+}
+
+/* } */

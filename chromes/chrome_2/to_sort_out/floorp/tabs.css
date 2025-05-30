@@ -1,0 +1,57 @@
+/************/
+/*** TABS ***/
+/************/
+
+/*
+@import url("moveSoundIconPosition.css");
+*/
+
+/*@-moz-document url(chrome://browser/content/browser.xhtml) {*/
+
+    tab[selected="true"]::after, .tabbrowser-tab[beforeselected-visible]::after {
+        opacity: 99 !important;
+    }
+
+    .tab-icon-image {
+        opacity: 1 !important;
+    }
+
+    .tab-icon-overlay:hover {
+        /* background */
+        fill-opacity: 1 !important;
+    }
+
+    /*** SQUARED TABS ***/
+
+    #titlebar #TabsToolbar {
+        padding: 0px !important;
+        border-radius: var(--rounding) !important;
+    }
+
+    .tab-icon-image {
+        display: none;
+    }
+
+    .tab-content {
+        width: 100%;
+        background-color: rgba(var(--secondary-color), var(--primary-alpha)) !important;
+    }
+
+    .urlbar-results{
+        background-color: rgba(var(--primary-color),var(--primary-alpha)) !important;
+    }
+
+    .tabbrowser-tab>.tab-stack>.tab-background {
+        border-radius: 0 !important;
+    }
+
+    .tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected="true"]) {
+        background-color: rgba(var(--secondary-color), var(--primary-alpha)) !important;
+    }
+
+    .tab-close-button:hover {
+        fill-opacity: 1 !important;
+        transform: rotate(180deg);
+    }
+
+/*}*/
